@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お知らせ｜株式会社MARU</title>
+  <meta name="description" content="株式会社MARUからのお知らせ・ニュース一覧です。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Zen+Old+Mincho:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="assets/logo.svg" alt="株式会社MARU" width="200" height="48">
+      </a>
+      <nav class="global-nav" aria-label="グローバルナビゲーション">
+        <ul>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="business.html">事業内容</a></li>
+          <li><a href="works.html">店舗・実績</a></li>
+          <li><a href="news.html" class="is-current">お知らせ</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="contact.html" class="nav-contact-btn">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+    <div class="container">
+      <ul>
+        <li><a href="index.html"><span class="mobile-nav-en">Top</span>トップ</a></li>
+        <li><a href="about.html"><span class="mobile-nav-en">About</span>会社概要</a></li>
+        <li><a href="business.html"><span class="mobile-nav-en">Business</span>事業内容</a></li>
+        <li><a href="works.html"><span class="mobile-nav-en">Works</span>店舗・実績</a></li>
+        <li><a href="news.html"><span class="mobile-nav-en">News</span>お知らせ</a></li>
+        <li><a href="recruit.html"><span class="mobile-nav-en">Recruit</span>採用情報</a></li>
+        <li><a href="contact.html"><span class="mobile-nav-en">Contact</span>お問い合わせ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <span class="page-hero-en">News</span>
+        <h1 class="page-hero-title">お知らせ</h1>
+        <ol class="breadcrumb">
+          <li><a href="index.html">トップ</a></li>
+          <li>お知らせ</li>
+        </ol>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <!--
+          お知らせの追加方法:
+          下の <li> ブロックをコピーして一番上に追加し、日付・カテゴリ・タイトルを書き換えてください。
+          カテゴリの例: お知らせ / 店舗情報 / 採用 / メディア
+        -->
+        <ul class="news-list reveal">
+          <li>
+            <div class="news-item">
+              <span class="news-meta"><time class="news-date" datetime="2026-07-01">2026.07.01</time><span class="news-cat">お知らせ</span></span>
+              <span class="news-title-text">コーポレートサイトを公開しました</span>
+            </div>
+          </li>
+          <li>
+            <div class="news-item">
+              <span class="news-meta"><time class="news-date" datetime="2026-03-01">2026.03</time><span class="news-cat">店舗情報</span></span>
+              <span class="news-title-text">987サウナをオープンしました</span>
+            </div>
+          </li>
+          <li>
+            <div class="news-item">
+              <span class="news-meta"><time class="news-date" datetime="2025-06-01">2025.06</time><span class="news-cat">店舗情報</span></span>
+              <span class="news-title-text">整体LIGHT岡崎店を「Natural整体」としてリニューアルしました</span>
+            </div>
+          </li>
+          <li>
+            <div class="news-item">
+              <span class="news-meta"><time class="news-date" datetime="2024-05-01">2024.05</time><span class="news-cat">店舗情報</span></span>
+              <span class="news-title-text">パーソナルジムSOL 康生店をオープンしました</span>
+            </div>
+          </li>
+          <li>
+            <div class="news-item">
+              <span class="news-meta"><time class="news-date" datetime="2023-12-01">2023.12</time><span class="news-cat">店舗情報</span></span>
+              <span class="news-title-text">メンズ脱毛BOSS 桑名店・眉毛サロンBROW 桑名店をオープンしました</span>
+            </div>
+          </li>
+          <li>
+            <div class="news-item">
+              <span class="news-meta"><time class="news-date" datetime="2023-08-01">2023.08</time><span class="news-cat">店舗情報</span></span>
+              <span class="news-title-text">眉毛サロンBROW 津店をオープンしました</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a href="index.html" class="footer-logo">
+            <img src="assets/logo-white.svg" alt="株式会社MARU" width="200" height="48">
+          </a>
+          <address class="footer-address">
+            <!-- TODO: 正式な住所に差し替え -->
+            〒000-0000 （所在地を記載）
+          </address>
+        </div>
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <ul>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="business.html">事業内容</a></li>
+            <li><a href="works.html">店舗・実績</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <small>&copy; MARU Inc. All Rights Reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
