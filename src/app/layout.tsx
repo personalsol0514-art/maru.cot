@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s｜株式会社MARU",
   },
   description:
-    "株式会社MARUは「縁ある人を豊かにする」を企業理念に、三重県・愛知県で美容（メンズ脱毛BOSS・眉毛サロンBROW）、パーソナルジムSOL、Natural整体、987サウナを運営しています。",
+    "株式会社MARUは「縁ある人を豊かにする」を企業理念に、三重県・愛知県で美容（メンズ脱毛BOSS・眉毛サロンBROW）、パーソナルジムSOL、Natural整体、987サウナを運営。店舗の開業・運営を支える店舗運営支援も行っています。",
 };
 
 export default function RootLayout({

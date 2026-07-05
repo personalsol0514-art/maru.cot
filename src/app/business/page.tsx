@@ -4,7 +4,8 @@ import PageHero from "@/components/page-hero";
 
 export const metadata: Metadata = {
   title: "事業内容",
-  description: "株式会社MARUの事業内容。メンズ脱毛・眉毛サロンなどの美容事業、パーソナルジム、整体、サウナ事業をご紹介します。",
+  description:
+    "株式会社MARUの事業内容。メンズ脱毛・眉毛サロンなどの美容事業、パーソナルジム、整体、サウナ事業、店舗運営支援をご紹介します。",
 };
 
 export default function BusinessPage() {
@@ -16,9 +17,9 @@ export default function BusinessPage() {
         <div className="container">
           <div className="reveal">
             <span className="section-label">Our Business</span>
-            <h2 className="section-title">生活の質を高める、4つの事業</h2>
+            <h2 className="section-title">生活の質を高める、5つの事業</h2>
             <p className="section-lead">
-              美容・フィットネス・整体・サウナ。 MARUは三重県・愛知県で4つの事業を展開し、
+              美容・フィットネス・整体・サウナ、そして店舗運営支援。 MARUは三重県・愛知県で5つの事業を展開し、
               縁ある人の生活の質の向上に貢献します。
             </p>
           </div>
@@ -94,6 +95,26 @@ export default function BusinessPage() {
                 <li>987サウナ（2026年3月OPEN）</li>
                 <li>「ととのう」体験にこだわった空間・動線設計</li>
                 <li>サウナ・水風呂・外気浴の質を追求</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Support */}
+          <div className="biz-section biz-reverse reveal" id="support">
+            <div className="biz-visual v-support">SUPPORT</div>
+            <div className="biz-text">
+              <span className="en">Store Support</span>
+              <h2>店舗運営支援事業</h2>
+              <p>
+                脱毛サロン・眉毛サロン・パーソナルジム・整体・サウナと、
+                自社で10店舗を立ち上げ育ててきた実践ノウハウをもとに、
+                これから店舗を始める方や運営にお悩みの方を伴走型でサポートします。
+                机上の理論ではなく、現場で成果につながった仕組みをそのままお届けします。
+              </p>
+              <ul className="biz-points">
+                <li>開業準備のサポート（物件選び・内装・メニュー設計）</li>
+                <li>集客の仕組みづくり（SNS運用・広告・リピート施策）</li>
+                <li>採用・育成・店舗オペレーションの体制づくり</li>
               </ul>
             </div>
           </div>

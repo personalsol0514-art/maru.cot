@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/page-hero";
 
@@ -25,8 +26,8 @@ export default function WorksPage() {
           </div>
           <div className="works-grid">
             <article className="work-card reveal">
-              <div className="work-thumb thumb-beauty">
-                <span>メンズ脱毛 BOSS</span>
+              <div className="work-thumb work-thumb-logo">
+                <Image src="/images/brands/boss.png" alt="メンズ脱毛BOSS ロゴ" width={388} height={564} />
               </div>
               <div className="work-body">
                 <span className="tag">美容</span>
@@ -43,8 +44,8 @@ export default function WorksPage() {
               </div>
             </article>
             <article className="work-card reveal">
-              <div className="work-thumb thumb-brow">
-                <span>眉毛サロン BROW</span>
+              <div className="work-thumb work-thumb-logo">
+                <Image src="/images/brands/brow.png" alt="眉毛サロンBROW ロゴ" width={116} height={55} />
               </div>
               <div className="work-body">
                 <span className="tag">美容</span>
@@ -61,8 +62,8 @@ export default function WorksPage() {
               </div>
             </article>
             <article className="work-card reveal">
-              <div className="work-thumb thumb-fitness">
-                <span>パーソナルジム SOL</span>
+              <div className="work-thumb work-thumb-logo">
+                <Image src="/images/brands/sol.png" alt="パーソナルジムSOL ロゴ" width={514} height={640} />
               </div>
               <div className="work-body">
                 <span className="tag">フィットネス</span>
@@ -79,8 +80,8 @@ export default function WorksPage() {
               </div>
             </article>
             <article className="work-card reveal">
-              <div className="work-thumb thumb-seitai">
-                <span>Natural 整体</span>
+              <div className="work-thumb work-thumb-logo">
+                <Image src="/images/brands/natural-seitai.png" alt="Natural整体 ロゴ" width={560} height={621} />
               </div>
               <div className="work-body">
                 <span className="tag">整体</span>
@@ -97,8 +98,8 @@ export default function WorksPage() {
               </div>
             </article>
             <article className="work-card reveal">
-              <div className="work-thumb thumb-sauna">
-                <span>987 サウナ</span>
+              <div className="work-thumb work-thumb-logo">
+                <Image src="/images/brands/987sauna.png" alt="987サウナ ロゴ" width={653} height={361} />
               </div>
               <div className="work-body">
                 <span className="tag">サウナ</span>

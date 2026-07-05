@@ -384,7 +384,95 @@ body.nav-locked {
 }
 .hero-inner {
   position: relative;
+  z-index: 2;
   padding: 140px 0 96px;
+}
+
+/* ---------- Hero スライドショー(写真) ---------- */
+.hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.6s var(--ease-expo);
+}
+.hero-slide.is-active {
+  opacity: 1;
+}
+.hero-slide img {
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(100deg, rgba(38, 33, 28, 0.72) 0%, rgba(38, 33, 28, 0.42) 45%, rgba(38, 33, 28, 0.28) 70%),
+    linear-gradient(0deg, var(--color-bg) 0%, rgba(250, 247, 243, 0) 26%);
+}
+.hero-dots {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .hero-dots {
+    right: 40px;
+    bottom: 32px;
+  }
+}
+.hero-dot {
+  width: 22px;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: background var(--transition), width var(--transition);
+}
+.hero-dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+.hero-dot.is-active {
+  width: 34px;
+  background: #d9a87e;
+}
+
+/* 写真の上に載る文字色調整 */
+.hero-has-media .hero-label {
+  color: #d9a87e;
+}
+.hero-has-media .hero-label::before {
+  background: #d9a87e;
+}
+.hero-has-media .hero-catch {
+  color: #fff;
+}
+.hero-has-media .hero-catch .accent {
+  color: #d9a87e;
+}
+.hero-has-media .hero-sub {
+  color: rgba(255, 255, 255, 0.86);
+}
+.hero-has-media .hero-scroll {
+  color: rgba(255, 255, 255, 0.75);
+}
+.hero-has-media .hero-scroll::after {
+  background: linear-gradient(#d9a87e, transparent);
+}
+.hero-has-media .btn-outline {
+  border-color: rgba(255, 255, 255, 0.85);
+  color: #fff;
+}
+.hero-has-media .btn-outline:hover {
+  background: #fff;
+  color: var(--color-ink);
 }
 .hero-catch {
   font-family: var(--font-serif);
@@ -410,6 +498,7 @@ body.nav-locked {
 }
 .hero-scroll {
   position: absolute;
+  z-index: 2;
   left: 50%;
   bottom: 20px;
   transform: translateX(-50%);
@@ -595,6 +684,28 @@ body.nav-locked {
 .work-card:hover .work-thumb > span {
   transform: scale(1.06);
 }
+/* ブランドロゴ入りサムネイル(ロゴが濃色のため明るい背景) */
+.work-thumb.work-thumb-logo {
+  background: linear-gradient(160deg, #ffffff 0%, #f7efe5 60%, var(--color-accent-soft) 100%);
+  padding: 28px;
+}
+.work-thumb.work-thumb-logo::before {
+  border-color: rgba(38, 33, 28, 0.14);
+}
+.work-card:hover .work-thumb.work-thumb-logo::before {
+  border-color: rgba(38, 33, 28, 0.3);
+}
+.work-thumb.work-thumb-logo img {
+  height: 62%;
+  width: auto;
+  max-width: 70%;
+  object-fit: contain;
+  transition: transform 0.6s var(--ease-expo);
+}
+.work-card:hover .work-thumb.work-thumb-logo img {
+  transform: scale(1.05);
+}
+
 .work-thumb.thumb-fitness {
   background: linear-gradient(135deg, #3e4a3d, #6d7c63);
 }
@@ -1035,6 +1146,9 @@ body.nav-locked {
 }
 .biz-visual.v-sauna {
   background: linear-gradient(150deg, #4a3226, #8a5a3b);
+}
+.biz-visual.v-support {
+  background: linear-gradient(150deg, #3d3a35, #7a7266);
 }
 .biz-text .en {
   font-size: 11px;

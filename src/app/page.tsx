@@ -1,16 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
+import HeroSlideshow from "@/components/hero-slideshow";
 
 export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="hero">
-        <div className="hero-blob"></div>
-        <div className="hero-blob hero-blob-2"></div>
-        <div className="hero-circle hero-circle-1" data-parallax="0.12"></div>
-        <div className="hero-circle hero-circle-2" data-parallax="0.2"></div>
+      <section className="hero hero-has-media">
+        <HeroSlideshow />
         <div className="container hero-inner">
-          <p className="hero-label">MARU Inc. — Beauty / Fitness / Seitai / Sauna</p>
+          <p className="hero-label">MARU Inc. — Beauty / Fitness / Seitai / Sauna / Support</p>
           <h1 className="hero-catch">
             <span className="line">
               <span>縁ある人を、</span>
@@ -22,7 +21,7 @@ export default function HomePage() {
             </span>
           </h1>
           <p className="hero-sub">
-            株式会社MARUは、美容・フィットネス・整体・サウナの4つの事業を通じて、
+            株式会社MARUは、美容・フィットネス・整体・サウナ、そして店舗運営支援の5つの事業を通じて、
             縁ある人の生活の質の向上に貢献し、物心両面の幸福を追求します。
           </p>
           <div className="hero-actions">
@@ -75,13 +74,13 @@ export default function HomePage() {
               Business
             </span>
             <span className="section-label">Business</span>
-            <h2 className="section-title">生活の質を高める、4つの事業</h2>
+            <h2 className="section-title">生活の質を高める、5つの事業</h2>
             <p className="section-lead">
-              美しくなること、動くこと、整えること、休むこと。
-              MARUは三重県・愛知県で、暮らしに寄り添う4つの事業を展開しています。
+              美しくなること、動くこと、整えること、休むこと。そして、その場をつくる人を支えること。
+              MARUは三重県・愛知県で、暮らしに寄り添う5つの事業を展開しています。
             </p>
           </div>
-          <div className="business-grid grid-4">
+          <div className="business-grid">
             <article className="business-card reveal">
               <div className="card-head">
                 <span className="num">01</span>
@@ -126,6 +125,17 @@ export default function HomePage() {
                 詳しく見る →
               </Link>
             </article>
+            <article className="business-card reveal">
+              <div className="card-head">
+                <span className="num">05</span>
+                <span className="en">Support</span>
+              </div>
+              <h3>店舗運営支援事業</h3>
+              <p>自社で店舗を育ててきた実践ノウハウをもとに、開業準備から集客・採用まで店舗づくりを伴走支援します。</p>
+              <Link href="/business#support" className="text-link">
+                詳しく見る →
+              </Link>
+            </article>
           </div>
         </div>
       </section>
@@ -140,7 +150,7 @@ export default function HomePage() {
           <div className="stats-grid reveal">
             <div className="stat">
               <div className="stat-num">
-                <span className="count" data-count="4">
+                <span className="count" data-count="5">
                   0
                 </span>
                 <span className="unit">事業</span>
@@ -208,8 +218,8 @@ export default function HomePage() {
           </div>
           <div className="works-grid">
             <article className="work-card reveal">
-              <div className="work-thumb thumb-beauty">
-                <span>メンズ脱毛 BOSS</span>
+              <div className="work-thumb work-thumb-logo">
+                <Image src="/images/brands/boss.png" alt="メンズ脱毛BOSS ロゴ" width={388} height={564} />
               </div>
               <div className="work-body">
                 <span className="tag">美容</span>
@@ -221,8 +231,8 @@ export default function HomePage() {
               </div>
             </article>
             <article className="work-card reveal">
-              <div className="work-thumb thumb-fitness">
-                <span>パーソナルジム SOL</span>
+              <div className="work-thumb work-thumb-logo">
+                <Image src="/images/brands/sol.png" alt="パーソナルジムSOL ロゴ" width={514} height={640} />
               </div>
               <div className="work-body">
                 <span className="tag">フィットネス</span>
@@ -234,8 +244,8 @@ export default function HomePage() {
               </div>
             </article>
             <article className="work-card reveal">
-              <div className="work-thumb thumb-seitai">
-                <span>Natural 整体</span>
+              <div className="work-thumb work-thumb-logo">
+                <Image src="/images/brands/natural-seitai.png" alt="Natural整体 ロゴ" width={560} height={621} />
               </div>
               <div className="work-body">
                 <span className="tag">整体</span>
@@ -247,8 +257,8 @@ export default function HomePage() {
               </div>
             </article>
             <article className="work-card reveal">
-              <div className="work-thumb thumb-sauna">
-                <span>987 サウナ</span>
+              <div className="work-thumb work-thumb-logo">
+                <Image src="/images/brands/987sauna.png" alt="987サウナ ロゴ" width={653} height={361} />
               </div>
               <div className="work-body">
                 <span className="tag">サウナ</span>
