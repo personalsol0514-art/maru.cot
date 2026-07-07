@@ -64,7 +64,15 @@ export default function SiteHeader() {
       >
         <div className="container header-inner">
           <Link href="/" className="header-logo">
-            <Image src="/assets/logo.svg" alt="株式会社MARU" width={200} height={48} priority />
+            <Image
+              src="/assets/logo-mark.png"
+              alt=""
+              width={766}
+              height={425}
+              priority
+              className="header-logo-mark"
+            />
+            <span className="header-logo-text">MARU</span>
           </Link>
           <nav className="global-nav" aria-label="グローバルナビゲーション">
             <ul>

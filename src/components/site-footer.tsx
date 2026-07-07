@@ -17,7 +17,14 @@ export default function SiteFooter() {
         <div className="footer-inner">
           <div>
             <Link href="/" className="footer-logo">
-              <Image src="/assets/logo-white.svg" alt="株式会社MARU" width={200} height={48} />
+              <Image
+                src="/assets/logo-mark-white.png"
+                alt=""
+                width={766}
+                height={425}
+                className="footer-logo-mark"
+              />
+              <span className="footer-logo-text">MARU</span>
             </Link>
             <address className="footer-address">
               {/* TODO: 正式な住所に差し替え */}

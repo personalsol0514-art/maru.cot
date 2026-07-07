@@ -9,6 +9,14 @@ export default function HomePage() {
       <section className="hero hero-has-media">
         <HeroSlideshow />
         <div className="container hero-inner">
+          <Image
+            src="/assets/logo-mark.png"
+            alt="株式会社MARU"
+            width={766}
+            height={425}
+            priority
+            className="hero-brand-mark"
+          />
           <p className="hero-label">MARU Inc. — Beauty / Fitness / Seitai / Sauna / Support</p>
           <h1 className="hero-catch">
             <span className="line">
