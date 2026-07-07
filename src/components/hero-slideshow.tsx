@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const SLIDES = [
-  { src: "/images/hero/hero-sauna.jpg", alt: "987サウナの温かみのある室内" },
-  { src: "/images/hero/hero-fitness.jpg", alt: "パーソナルジムSOLのトレーニング風景" },
-  { src: "/images/hero/hero-beauty.jpg", alt: "美容サロンの落ち着いた施術スペース" },
+  { src: "/images/hero/hero-welcome.jpg", alt: "笑顔でお客様を迎えるスタッフ" },
+  { src: "/images/hero/hero-highfive.jpg", alt: "トレーナーとお客様がハイタッチする様子" },
+  { src: "/images/hero/hero-team.jpg", alt: "談笑するスタッフたち" },
 ];
 
 const INTERVAL_MS = 5500;
